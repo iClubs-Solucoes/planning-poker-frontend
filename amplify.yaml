@@ -1,0 +1,20 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm i yarn
+        - yarn
+    build:
+      commands:
+        - echo "COGNITOPOOLREGION=$COGNITOPOOLREGION" >> .env 
+        - echo "COGNITOPOOL=$COGNITOPOOL" >> .env 
+        - echo "COGNITOCLIENT=$COGNITOCLIENT" >> .env 
+        - yarn build
+  artifacts:
+    baseDirectory: build
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - node_modules/**/*
