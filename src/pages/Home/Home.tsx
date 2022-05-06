@@ -1,16 +1,25 @@
-import { Heading } from 'components';
+import { Header } from 'components';
 
 import * as S from './styles';
 
 export function Home() {
   return (
     <S.Container>
-      <Heading level={1}>Welcome to React Architecture</Heading>
-      <p>
-        This project was created to be used as the basis for React applications.
-        The architecture was designed aiming at the organization and scalability
-        of the application, counting on the main libraries in the market.
-      </p>
+      <Header />
+
+      <S.Content>
+        <S.SprintName>
+          <div>
+            <h1>Sprint 13</h1>
+            <S.ChangeSprint>Alterar sprint</S.ChangeSprint>
+          </div>
+
+          <div>
+            <span>Tempo restante</span>
+            <h2>1:00</h2>
+          </div>
+        </S.SprintName>
+      </S.Content>
     </S.Container>
   );
 }

@@ -56,8 +56,7 @@ export const font = {
     heading01: '5rem',
   },
   family: {
-    Lato: "'Lato',sans-serif",
-    Playfair: "'Playfair Display', serif",
+    Roboto: "'Roboto',sans-serif",
   },
 } as const;
 

@@ -3,54 +3,40 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 100vh;
+`;
 
+export const Content = styled.div`
+  padding: 3.2rem 6.4rem;
+`;
+
+export const SprintName = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
 
-  max-width: 110rem;
-  margin: 0 auto;
-
-  img {
-    width: 15rem;
-    margin-bottom: 2.7rem;
-
-    @media (max-width: ${breakpoints.medium}) {
-      width: 10rem;
-    }
+  h1 {
+    color: #212b36;
+    font-size: 4.2rem;
+    font-weight: 700;
   }
 
-  p {
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 2rem;
-    font-weight: ${font.light};
-    line-height: ${font.lineHeight.xxsmall};
-
-    @media (max-width: ${breakpoints.medium}) {
-      font-size: 1.6rem;
-    }
+  h2 {
+    color: #3c59fd;
+    font-size: 3.2rem;
+    text-align: end;
+    margin-top: 0.5rem;
   }
 
-  a {
-    text-decoration: none;
-    color: ${primaryColors.black};
-    font-weight: ${font.semiBold};
-    font-size: 1.8rem;
-    line-height: ${font.lineHeight.xxsmall};
-
-    @media (max-width: ${breakpoints.medium}) {
-      font-size: 1.5rem;
-    }
+  span {
+    color: #212b36;
   }
+`;
 
-  @media (max-width: ${breakpoints.medium}) {
-    padding: 2.4rem;
-
-    h1 {
-      font-size: ${font.sizes.heading04};
-      text-align: center;
-    }
-  }
+export const ChangeSprint = styled.button`
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+  color: #3c59fd;
+  margin-top: 1rem;
 `;

@@ -16,10 +16,11 @@ export default createGlobalStyle`
   body {
     -webkit-font-smoothing: antialiased;
     font-size: 1.6rem;
+    background-color: #F9FAFB;
   }
 
   body, input, textarea, button {
-    font-family: ${font.family.Lato};
+    font-family: ${font.family.Roboto};
     font-weight: ${font.normal};
   }
 
