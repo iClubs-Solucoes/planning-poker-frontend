@@ -19,6 +19,25 @@ export function Home() {
             <h2>1:00</h2>
           </div>
         </S.SprintName>
+
+        <S.PlanningContent>
+          <S.StoriesNamesContainer>
+            <span>HISTÓRIAS</span>
+
+            <S.History isActive>
+              <span>Task IC-1000</span>
+              <span>0</span>
+            </S.History>
+            <S.History>
+              <span>Task IC-1000</span>
+              <span>0</span>
+            </S.History>
+
+            <button>Adicionar história</button>
+          </S.StoriesNamesContainer>
+
+          <S.PokerContainer></S.PokerContainer>
+        </S.PlanningContent>
       </S.Content>
     </S.Container>
   );
